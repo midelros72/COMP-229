@@ -6,10 +6,11 @@ Date: 2025-09-14
 Description: Home page component — introduces portfolio with welcome 
              message, mission statement, and navigation buttons.*/
              
-import profileImg from "../assets/profile-pic.png";
+
 import { FiDownload } from "react-icons/fi";
 import resume from "../assets/Senior_Mainframe_Developer_Resume_MDR.pdf";
 import React, { useState, useEffect } from "react";
+import bgImage from "../assets/Mike BG.png"
 
 function useTypingEffect(words, typingSpeed, backSpeed, delay) {
   const [text, setText] = useState("");
@@ -60,45 +61,49 @@ function AnimatedRole({ text }) {
 export default function Home() {
   const typedText = useTypingEffect(
     ["web developer", "mainframe developer", "cybersecurity analyst"],
-    180, // typing speed (slower)
-    100, // backspacing speed
-    2000 // pause before deleting
+    180, 
+    100, 
+    2000 
   );
 
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col lg:flex-row-reverse justify-center items-center gap-9 lg:gap-20 px-6 max-w-5xl py-16"
+      className="min-h-screen w-full flex flex-col lg:flex-row-reverse justify-center items-center gap-9 lg:gap-20 px-6 py-16 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${bgImage})` }}
     >
-      {/* Profile Picture */}
-      <div className="z-10 mx-auto lg:mx-0">
-        <img
-          className="w-[200px] border-0 rounded-full shadow-lg shadow-gray-500/70 lg:max-w-[250px] object-cover object-bottom hover:translate-y-1 transition-all"
-          src={profileImg}
-          alt="Profile Image"
-        />
-      </div>
+          
 
-      {/* Text Block */}
-      <div className="font-mono z-10 text-left lg:ml-16">
-        <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-3 text-neutral-50">
-          Hello, my name is Michael Del Rosario
-        </h1>
+        
+      <div className="font-mono z-10 text-left lg:ml-[-6in]">
+                <h1 className="text-lg md:text-3xl lg:text-4xl font-bold mb-1 text-neutral-50">
+                  Hello, 
+                </h1>  
+                 
+                <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mb-1 text-neutral-50">
+                my name is
+                </h1>
 
-        <p className="h-12 mb-6">
-          <span className="text-xl md:text-2xl lg:text-3xl font-semibold text-neutral-50">
-            I'm a{" "}
-          </span>
-          <AnimatedRole text={typedText} />
-        </p>
+                <h1 className="text-xl md:text-4xl lg:text-5xl font-bold mb-1 text-amber-400">
+                Michael Del Rosario
+                </h1>
 
-        <p className="text-gray-300 text-lg mb-8">
-          "I empower organizations to modernize legacy systems, secure digital
-          infrastructures, and harness AI-driven solutions, bridging the gap
-          between proven enterprise technologies and cutting-edge innovation."
-        </p>
+                
 
-        {/* Buttons */}
+                    <p className="h-12 ">
+                      <span className="text-xl md:text-2xl lg:text-3xl font-semibold text-neutral-50">
+                        I'm a{" "}
+                      </span>
+                      <AnimatedRole text={typedText} />
+                    </p>
+
+                    <p className="text-gray-300 text-lg mb-8 border border-transparent rounded-lg ">
+                     "I empower organizations to modernize legacy systems,<br />
+                      secure digital infrastructures, and harness AI-driven solutions,<br />
+                      bridging the gap between proven enterprise technologies<br />
+                      and cutting-edge innovation."
+                    </p>
+
         <div className="flex flex-wrap gap-4">
           <a
             className="bg-gradient-to-br flex flex-row from-teal-500 to-indigo-600 py-3 px-6 rounded hover:translate-y-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition relative overflow-hidden"
@@ -112,9 +117,11 @@ export default function Home() {
             href={resume}
           >
             <p>Resume</p>
+      
             <span className="h-5 ml-3 text-2xl text-white">
               <FiDownload />
             </span>
+
           </a>
         </div>
       </div>

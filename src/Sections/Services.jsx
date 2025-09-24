@@ -8,15 +8,17 @@ Description: Services page component — lists professional services offered
              
 import React from 'react'
 import { FaPaintBrush, FaCode, FaMusic } from 'react-icons/fa'
+import bgImage2 from "../assets/BlueBG.png"
 
 export default function Services() {
   return (
     <section
       id="services"
-      className="min-h-screen font-mono flex items-center justify-center py-20"
+      className="min-h-screen w-full flex flex-col lg:flex-row-reverse justify-center items-center gap-9 lg:gap-20 px-6 py-16 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${bgImage2})` }}
     >
       <div className="max-w-5xl w-full text-center">
-        <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">
+        <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-teal-200 via-blue-300 to-indigo-400 bg-clip-text text-transparent">
           What I Do?
         </h2>
 

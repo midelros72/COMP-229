@@ -22,8 +22,8 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
             </div>
           )}
 
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-300 text-lg hover:text-xl hover:text-white transition-all">
+          <div className="hidden md:flex items-center space-x-8 ">
+            <a href="#home" className=" text-gray-300 text-lg hover:text-xl hover:text-white transition-all">
               Home
             </a>
             <a href="#about" className="text-gray-300 text-lg hover:text-xl hover:text-white transition-all">
@@ -35,7 +35,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
             <a href="#services" className="text-gray-300 text-lg hover:text-xl hover:text-white transition-all">
               Services
             </a>
-            <a href="#contact" className="text-gray-300 text-lg hover:text-xl hover:text-white transition-all">
+            <a href="#contact" className="  text-gray-300 text-lg hover:text-xl hover:text-white transition-all">
               Contact Me
             </a>
           </div>

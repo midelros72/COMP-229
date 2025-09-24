@@ -10,6 +10,7 @@ import React from 'react'
 import project1Img from '../assets/practera.jpg'
 import project2Img from '../assets/Syncspace.jpg'
 import project3Img from '../assets/MMTS.jpg'
+import bgImage2 from '../assets/BlueBG.png'
 
 export default function Projects() {
   const projectList = [
@@ -35,7 +36,8 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen font-mono flex items-center justify-center py-20"
+      className="min-h-screen w-full flex flex-col lg:flex-row-reverse justify-center items-center gap-9 lg:gap-20 px-6 py-16 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${bgImage2})` }}
     >
       <div className="max-w-5xl w-full">
         <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">
@@ -46,12 +48,27 @@ export default function Projects() {
           {projectList.map((project, index) => (
             <div
               key={index}
-              className="group bg-gray-900 rounded-2xl p-6 shadow-lg w-72 hover:shadow-[0_0_25px_rgba(14,165,233,0.5)] transition-transform transform hover:-translate-y-2 hover:scale-105 text-left"
+            className="
+                group 
+                bg-gray-800 
+                rounded-2xl 
+                p-6 
+                shadow-lg 
+                w-72 
+                hover:shadow-[0_0_15px_rgba(14,165,233,20)]
+
+                transition-transform 
+                transform 
+                hover:-translate-y-2 
+                hover:scale-105 
+                text-left
+              "
+
             >
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-300 text-sm">{project.description}</p>
 
-              {/* Image/Preview with hover zoom */}
+             
               <div className="mt-4 overflow-hidden rounded-md h-32 w-full">
                 {project.link ? (
                   <a href={project.link} target="_blank" rel="noopener noreferrer">

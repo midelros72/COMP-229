@@ -10,6 +10,7 @@ Description: Contact page component — provides a form for users to submit
 import React, { useState } from "react";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import { BsLinkedin } from "react-icons/bs";
+import bgImage2 from "../assets/BlueBG.png"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -60,12 +61,13 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen font-mono py-20 flex items-center justify-center"
+      className="min-h-screen w-full flex flex-col lg:flex-row-reverse justify-center items-center gap-9 lg:gap-20 px-6 py-16 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${bgImage2})` }}
     >
       <div className="px-4 max-w-6xl w-full">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           
-          {/* Contact Info (slightly higher, centered) */}
+        
           <div className="flex flex-col items-start text-left mt-24 md:mt-32">
             <h3 className="text-3xl font-bold mb-6 text-white">
               Contact Information

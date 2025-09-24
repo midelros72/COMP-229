@@ -11,21 +11,25 @@ export default function MobileMenu({isMenuOpen, setIsMenuOpen}) {
 
             <RxCross2/>    
         </button>
+
+
         <a 
             onClick={() => setIsMenuOpen(false)}
-            href="#home" className={` text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+            href="#home" 
+            className={` text-xl font-semibold text-white my-4 transform transition-transform duration-300
                 ${
                     isMenuOpen
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-5"
                 } `}
-            >
+        >
             Home   
         </a>
             
         <a 
             onClick={() => setIsMenuOpen(false)}
-            href="#about" className={` text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+            href="#about" 
+            className={` text-xl font-semibold text-white my-4 transform transition-transform duration-300
                 ${
                     isMenuOpen
                     ? "opacity-100 translate-y-0"
@@ -35,33 +39,34 @@ export default function MobileMenu({isMenuOpen, setIsMenuOpen}) {
             About Me
         </a>
         
-        <a 
+         <a 
             onClick={() => setIsMenuOpen(false)}
-            href="Projects" className={` text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+            href="#projects" 
+            className={` text-xl font-semibold text-white my-4 transform transition-transform duration-300
                 ${
                     isMenuOpen
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-5"
                 } `}
-            >
+        >
             Projects
         </a>
         
-        <a 
+         <a 
             onClick={() => setIsMenuOpen(false)}
-            href="#Services" className={` text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+            href="#services" className={` text-2xl font-semibold text-white my-4 transform transition-transform duration-300
                 ${
                     isMenuOpen
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-5"
                 } `}
-            >
+        >
             Services
         </a>
         
         <a 
             onClick={() => setIsMenuOpen(false)} 
-            href="#Contact" className={` text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+            href="#contact" className={` text-xl font-semibold text-white my-4 transform transition-transform duration-300
                 ${
                     isMenuOpen
                     ? "opacity-100 translate-y-0"

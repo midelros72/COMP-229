@@ -10,28 +10,30 @@ import React from "react";
 import { FaEnvelope, FaLinkedin, FaDownload } from "react-icons/fa";
 import resume from "../assets/Senior_Mainframe_Developer_Resume_MDR.pdf";
 import pic1 from "../assets/mike-pic.jpeg";
+import bgImage2 from "../assets/BlueBG.png"
 
 export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen font-mono flex items-center justify-center py-20"
+      className="min-h-screen w-full flex flex-col lg:flex-row-reverse justify-center items-center gap-9 lg:gap-20 px-6 py-16 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${bgImage2})` }}
     >
-      {/* Container */}
+     
       <div className="max-w-5xl w-full grid md:grid-cols-2 gap-12 items-center">
-        {/* Left Column - Photo & Contact */}
+      
         <div className="flex flex-col items-center text-center md:text-left">
           <img
             src={pic1}
             alt="Michael Del Rosario"
             className="w-48 h-48 rounded-full object-cover shadow-lg mb-6"
           />
-          <h1 className="text-3xl font-bold">Michael Del Rosario</h1>
-          <p className="text-lg text-orange-300 mt-2">
+          <h1 className="text-3xl font-bold ">Michael Del Rosario</h1>
+          <p className="font-semibold text-lg text-amber-400 ">
             Mainframe Developer & AI Enthusiast
           </p>
 
-          {/* Contact Buttons */}
+          
           <div className="flex gap-4 mt-6">
             <a
               href="mailto:midelros@gmail.com"
@@ -56,18 +58,19 @@ export default function About() {
           </div>
         </div>
 
-        {/* Right Column - About Text */}
+        
         <div>
-          <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-amber-400">About Me</h2>
           <p className="mb-4 leading-relaxed text-justify">
             Hi, I’m <span className="font-semibold">Michael</span> — a Senior
-            Mainframe Developer with over 10 years of experience in COBOL, CICS,
-            DB2, and JCL. I’ve worked on large-scale enterprise applications,
+            Mainframe Developer with over 10 years of experience in{" "}
+            <span className="font-semibold text-amber-200">COBOL, CICS,
+            DB2, and JCL</span>{""}. I’ve worked on large-scale enterprise applications,
             focusing on modernization, optimization, and compliance.
           </p>
           <p className="mb-4 leading-relaxed text-justify">
             I am currently pursuing a{" "}
-            <span className="font-semibold">
+            <span className="font-semibold text-amber-200">
               Software Engineering Technology – Artificial Intelligence
             </span>{" "}
             program, expanding my expertise into modern technologies, Python,
@@ -75,8 +78,8 @@ export default function About() {
           </p>
           <p className="mb-4 leading-relaxed text-justify">
             I’m passionate about bridging the gap between{" "}
-            <span className="font-semibold">legacy systems</span> and{" "}
-            <span className="font-semibold">modern AI solutions</span>, while
+            <span className="font-semibold text-amber-200">legacy systems</span> and{" "}
+            <span className="font-semibold text-amber-200">modern AI solutions</span>, while
             also mentoring the next generation of IT professionals.
           </p>
           <p className="leading-relaxed mb-6 text-justify">
@@ -84,7 +87,7 @@ export default function About() {
             exploring how technology can solve real-world problems.
           </p>
 
-          {/* Skills */}
+          
           <h3 className="text-xl font-semibold text-amber-400 mt-6 mb-3">
             Skills
           </h3>

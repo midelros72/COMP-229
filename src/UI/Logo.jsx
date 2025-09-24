@@ -8,11 +8,12 @@ export default function Logo() {
         src={logo}
         alt="Logo"
         className="
-          w-9 h-auto    /* Mobile: ~36px wide */
-          sm:w-12       /* Small screens (≥640px): ~48px */
-          md:w-16       /* Medium screens (≥768px): ~64px */
-          lg:w-20       /* Large screens (≥1024px): ~80px */
-          xl:w-24       /* Extra large (≥1280px): ~96px */
+          
+          w-9 h-auto   
+          sm:w-12       
+          md:w-16       
+          lg:w-20      
+          xl:w-24      
           object-contain
           transition-transform duration-300
           group-hover:scale-110
