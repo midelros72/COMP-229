@@ -51,7 +51,7 @@ export default function About() {
             </a>
             <a
               href={resume}
-              className="flex items-center gap-2 border border-gray-400 text-white px-4 py-2 rounded-xl hover:bg-gray-100 transition"
+              className="flex items-center gap-2 border border-gray-400 text-white px-4 py-2 rounded-xl hover:bg-gray-300 hover:text-black transition"
             >
               <FaDownload /> Resume
             </a>
