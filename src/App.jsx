@@ -1,3 +1,11 @@
+/*
+Filename: App.jsx
+Student's Name: Michael Del Rosario
+StudentID: 301545834
+Date: 2025-09-14 
+Description: App page component — Drives the different  
+             pages of my portfolio.*/
+             
 import React, { useState } from 'react'
 import Navbar from './Navbar'
 import MobileMenu from './UI/MobileMenu'

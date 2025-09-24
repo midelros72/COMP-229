@@ -1,3 +1,10 @@
+/*
+Filename: App.jsx
+Student's Name: Michael Del Rosario
+StudentID: 301545834
+Date: 2025-09-14 
+Description: Nav Bar component — Contains codes for nav bar components and  
+             redirects the user to different pages of my portfolio.*/
 import React, { useEffect } from 'react'
 import Logo from './UI/Logo'
 import { MdMenu } from 'react-icons/md'
